@@ -1,0 +1,33 @@
+@keyframes flutuar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+.home {
+    display: flex;
+    height: 40rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--global-color-primary);
+    font-family: "JetBrains Mono";
+}
+
+.home h3 {
+    width: 40rem;
+
+    font-size: 2rem;
+    line-height: 2.3rem;
+}
+.home h3::first-line {
+    font-size: 1.3rem;
+    
+}
+.typing {
+    color: #C8553D;
+}
+.home img {
+    animation: flutuar 4s ease-in-out infinite
+}

@@ -1,0 +1,74 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+header {
+    height: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: "JetBrains Mono";
+    text-align: center;
+    font-size: 15px;
+    color: var(--global-color-primary);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    cursor: var(--cursor-default);
+    opacity: 0;
+}
+header h1::before {
+    content: "< ";
+    color: #C8553D;
+}
+header h1::after {
+    content: " >";
+    color: #C8553D;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    margin-left: 20px;
+    line-height: 25px;
+    cursor: var(--cursor-pointer);
+    opacity: 0;
+}
+header ul li:last-child {
+    background-color: var(--global-color-primary);
+    color: var(--global-backgruond-primary);
+    border-radius: 0.2rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+header h1 {
+    animation: fade-in 1.0s  ease-out 0.5 forwards;
+}
+header ul li:first-child {
+    animation: fade-in 1.0s  ease-out 0.5s forwards;
+}
+header ul li:nth-child(2) {
+    animation: fade-in 1.0s  ease-out 0.8s forwards;
+}
+header ul li:nth-child(3) {
+    animation: fade-in 1.0s  ease-out 1.1s forwards;
+}
+header ul li:nth-child(4) {
+    animation: fade-in 1.0s  ease-out 1.4s forwards;
+}
+header ul li:nth-child(5) {
+    animation: fade-in 1.0s  ease-out 1.7s forwards;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guilhermelopes.dev</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+<body>
+    <header>
+        <h1>guilhermelopes.dev</h1>
+        <ul>
+            <li>Home</li>
+            <li>Sobre</li>
+            <li>Experiencia</li>
+            <li>Contato</li>
+            <li>Baixar Currículo</li>
+        </ul>
+    </header>
+
+    <section class="home">
+        <section>
+            <h3>
+                Olá, o meu nome é <br>
+                GUILHERME LOPES <br>
+                Desenvolvedor <span class="typing"></span>
+            </h3>
+        </section>
+        <section>
+            <img src="images/home-code.png" alt="" width="500px">
+        </section>
+    </section>
+
+    <script>
+        var typed = new Typed(".typing", {
+    strings: ["Front-end", "Back-end", "Mobile"],
+    typeSpeed: 120,  // Velocidade da digitação
+    backSpeed: 50,   // Velocidade de apagar
+    loop: true       // Repetir o efeito infinitamente
+    });
+    </script>
+</body>
+</html>
