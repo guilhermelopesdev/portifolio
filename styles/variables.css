@@ -2,8 +2,9 @@
     --global-backgruond-primary: #041425;
     --global-background-secondary: #082849;
     --global-color-primary: #FFF3EB;
+    --global-destaque: #C8553D;
     --cursor-default: url(../images/cursor/default.svg), auto;
-    --cursor-pointer: url(../images/cursor/pointer.svg), auto;
+    --cursor-pointer: url(../images/cursor/pointer-mouse.svg), auto;
 }
 
 html {
